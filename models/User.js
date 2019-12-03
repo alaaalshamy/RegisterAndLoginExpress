@@ -8,6 +8,8 @@ const UsersSchema = new Schema({
     index: true,
     unique: true
   },
+  userName:String,
+  status:Number,
   hash: String,
   salt: String,
   role: String,

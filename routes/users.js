@@ -14,6 +14,8 @@ router.get('/', function(req, res, next) {
 //POST new user route (optional, everyone has access)
 router.post('/addUser', auth.optional, (req, res, next) => {
   const { body: { user } } = req;
+  user.status = 1 ; //1  for active user 
+  user.role? user.role : 'user'; // if user didn't get any roll make it normal user 
   if(!user.email) {
     return res.status(422).json({
       errors: {
