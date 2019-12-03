@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/a0478e7e-df55-44ea-9fe8-c9cf68d076ff/resourceGroups/plantBackEnd/providers/Microsoft.Web/sites/NodePlant",
+    "appService.deploySubpath": ""
+}

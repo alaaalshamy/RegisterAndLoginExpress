@@ -32,7 +32,7 @@ app.use(function(req, res, next) {
 // if(!isProduction) {
 //   app.use(errorHandler());
 // }
-mongoose.connect('mongodb://localhost/PlantsDB',{useUnifiedTopology: true,useNewUrlParser :true});
+mongoose.connect("mongodb://plantsbd:lUx2fggPv5Rprd5SM9p7XcRj5qISM9MueYCqL06EFEtptDD5aySjUjBMr9qXImvjAT2tnJKRygrdirpSxWcf8g==@plantsbd.documents.azure.com:10255/?ssl=true",{useUnifiedTopology: true,useNewUrlParser :true});
 // mongoose.set('debug', true)
 // error handler
 app.use(function(err, req, res, next) {
