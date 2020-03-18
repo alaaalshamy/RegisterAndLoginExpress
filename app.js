@@ -36,7 +36,9 @@ app.use(function(req, res, next) {
 // if(!isProduction) {
 //   app.use(errorHandler());
 // }
-mongoose.connect("mongodb://plantsbd:lUx2fggPv5Rprd5SM9p7XcRj5qISM9MueYCqL06EFEtptDD5aySjUjBMr9qXImvjAT2tnJKRygrdirpSxWcf8g==@plantsbd.documents.azure.com:10255/?ssl=true",{useUnifiedTopology: true,useNewUrlParser :true});
+// mongoose.connect("mongodb://plantsbd:lUx2fggPv5Rprd5SM9p7XcRj5qISM9MueYCqL06EFEtptDD5aySjUjBMr9qXImvjAT2tnJKRygrdirpSxWcf8g==@plantsbd.documents.azure.com:10255/?ssl=true",{useUnifiedTopology: true,useNewUrlParser :true});
+
+ mongoose.connect("mongodb://green-home-db:K42peNZfBmTDjwUdXjL2fw492tKrZzSszuphIjze5UaQeA4fpVe3n0dCdVcKojDdP1osdzUWzwGVSIZnPmNVDg==@green-home-db.mongo.cosmos.azure.com:10255/?ssl=true&appName=@green-home-db@",{useUnifiedTopology: true,useNewUrlParser :true});
 // mongoose.set('debug', true)
 // error handler
 app.use(function(err, req, res, next) {
