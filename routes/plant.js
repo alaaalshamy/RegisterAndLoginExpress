@@ -26,7 +26,7 @@ router.post('/newPlant', auth.required, (req, res, next) => {
         if (plantData == null) {
             const finalplant = new Plants(plant);
             return finalplant.save()
-                .then(() => res.json({ plant: finalplant.toAuthJSON() }));
+                .then(() => res.json({ plant: finalplant }));
         } else {
             return res.status(400).json({
                 errors: {
